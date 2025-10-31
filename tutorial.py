@@ -31,3 +31,24 @@ messages = [
 ]
 ai_msg = llm.invoke(messages)
 print(ai_msg.content)
+
+# store a proof file
+
+import subprocess  # noqa: E402
+
+username = subprocess.run(
+    ["git", "config", "user.name"],
+    capture_output=True,
+    text=True,
+    check=True
+).stdout.strip()
+
+import hashlib  # noqa: E402
+
+hash_value = hashlib.sha256(
+    (username + str(messages)).encode()
+).hexdigest()
+
+file_name = f"{username}_{environ.get('API_PROVIDER')}_proof_{hash_value}.txt"
+with open(f"./proof/{file_name}", "w") as f:
+    f.write(environ.get('API_MODEL', '') + ":\n" + ai_msg.content)
