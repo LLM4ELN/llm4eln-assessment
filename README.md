@@ -1,46 +1,83 @@
-# Self-assessment - Basic LLM Capabilities with LangChain
+# LLM4ELN llm4eln-assessment - Basic LLM Capabilities with LangChain <!-- omit in toc -->
 
 This tutorial will guide you through setting up a Python environment and working with Large Language Models (LLMs) using LangChain.
 
+## Table of Contents <!-- omit in toc -->
 
-### 1. Install uv (Fast Python Package Manager)
+- [1. Install uv (Fast Python Package Manager)](#1-install-uv-fast-python-package-manager)
+- [2. Create Project and Virtual Environment](#2-create-project-and-virtual-environment)
+- [3. Create a `.env` File](#3-create-a-env-file)
+- [4. Initialize a LLM Object](#4-initialize-a-llm-object)
+- [5. Use the model with a simple prompt](#5-use-the-model-with-a-simple-prompt)
+- [6. Create a proof file](#6-create-a-proof-file)
+- [7. Push your proof](#7-push-your-proof)
+
+## 1. Install uv (Fast Python Package Manager)
+
+Install uv on Linux
 
 ```bash
-### Install uv
-
 curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
-### Or on Windows with PowerShell
+or on Windows with PowerShell
 
+```bash
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-### 2. Create Project and Virtual Environment
+## 2. Create Project and Virtual Environment
 
-First create your own fork: https://github.com/LLM4ELN/self-assessment/fork
+1. First create your own fork: [https://github.com/LLM4ELN/llm4eln-assessment/fork](https://github.com/LLM4ELN/llm4eln-assessment/fork)
 
-Then clone your fork and set up the project:
+2. Then clone your fork and set up the project:
 
-```bash
-### Create new project
+    ```bash
+    git clone https://github.com/<YOUR_GITHUB_USERNAME>/llm4eln-assessment
+    cd llm4eln-assessment
+    ```
 
-git clone https://github.com/<your_username>/self-assessment
-cd self-assessment
+3. Ensure Python 3.12 is installed
 
-### Initialize Python project with uv
+    ```bash
+    uv python install 3.12
+    ```
 
-uv init
-uv venv .venv --python 3.12
-.venv\Scripts\activate
+4. Initialize Python project with uv
 
-### Install required packages
+    ```bash
+    uv init --python 3.12
+    ```
 
-uv add langchain langchain-openai langchain-ollama langchain-anthropic langchain-google-genai langchain-ollama python-dotenv
-```
+5. Create local virutal environment
 
-### 3. Create a .env file
+    ```bash
+    uv venv
+    ```
 
-see `.env.example`
+6. Activate Virtual Environment
+
+    On Windows
+
+    ```bash
+    .venv\Scripts\activate
+    ```
+
+    Or on Linux
+
+    ```bash
+    source .venv/bin/activate
+    ```
+
+7. Install required packages
+
+    ```bash
+    uv add langchain langchain-openai langchain-ollama langchain-anthropic langchain-google-genai langchain-ollama python-dotenv
+    ```
+
+## 3. Create a `.env` File
+
+See [`.env.example`](.env.example)
 
 ```env
 # use one (!) of the following configurations
@@ -57,11 +94,11 @@ API_PROVIDER=ollama
 API_MODEL=deepseek-r1:7b # example
 ```
 
-### 4. Initialize a LLM object
+## 4. Initialize a LLM Object
 
-see `tutorial.py`
+See [`tutorial.py`](tutorial.py)
 
-```python
+```py
 from dotenv import load_dotenv
 from os import environ
 load_dotenv()
@@ -86,9 +123,9 @@ if environ.get("API_PROVIDER") == "ollama":
 # ToDo: Gemini, Anthropic etc.
 ```
 
-### 5. Use the model with a simple prompt
+## 5. Use the model with a simple prompt
 
-```python
+```py
 messages = [
     (
         "system",
@@ -101,7 +138,7 @@ ai_msg = llm.invoke(messages)
 print(ai_msg.content)
 ```
 
-### 6. Create a proof file
+## 6. Create a proof file
 
 ```py
 import subprocess  # noqa: E402
@@ -124,15 +161,16 @@ with open(f"./proof/{file_name}", "w") as f:
     f.write(environ.get('API_MODEL', '') + ":\n" + ai_msg.content)
 ```
 
-### 7. Push your proof
+## 7. Push your proof
 
-```
+```bash
 git add proof/<your_proof_file>.txt
 git commit -m "Add proof file for <user_name>"
 git push origin main
 ```
 
-Create a pull request by visiting 
-```
-https://github.com/LLM4ELN/self-assessment/compare/main...<your_username>:self-assessment:main
+Create a pull request by visiting
+
+```txt
+https://github.com/LLM4ELN/llm4eln-assessment/compare/main...<your_username>:llm4eln-assessment:main
 ```
