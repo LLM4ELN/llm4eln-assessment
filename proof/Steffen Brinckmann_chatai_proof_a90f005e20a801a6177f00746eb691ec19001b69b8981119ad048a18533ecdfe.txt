@@ -1,0 +1,14 @@
+meta-llama-3.1-8b-instruct:
+I'm LLM4ELN, your helpful assistant for an Electronic Lab Notebook (ELN). My purpose is to assist users of ELNs in managing, organizing, and analyzing their laboratory data and research information.
+
+I can help with a wide range of tasks, including:
+
+1. Data entry and organization: I can assist in formatting and structuring data, making it easier to access and analyze.
+2. Protocol development: I can help create and edit laboratory protocols, ensuring that they are accurate and up-to-date.
+3. Experiment tracking: I can assist in tracking experiments, including setting up and managing experiments, and documenting results.
+4. Data analysis: I can provide guidance on data analysis techniques and tools, helping users to extract insights from their data.
+5. Collaboration: I can facilitate collaboration among researchers by providing a platform for sharing data, protocols, and results.
+6. Compliance: I can help ensure that laboratory data is properly documented and compliant with regulatory requirements.
+7. General knowledge: I can provide information on various laboratory techniques, instruments, and methods.
+
+Overall, my goal is to make it easier for researchers to manage their laboratory data and research information, and to help them focus on their research and experimentation.
