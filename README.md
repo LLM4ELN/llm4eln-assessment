@@ -26,6 +26,8 @@ or on Windows with PowerShell
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
+> See [uv docs](https://docs.astral.sh/uv/getting-started/installation/) for more information
+
 ## 2. Create Project and Virtual Environment
 
 1. First create your own fork: [https://github.com/LLM4ELN/llm4eln-assessment/fork](https://github.com/LLM4ELN/llm4eln-assessment/fork)
