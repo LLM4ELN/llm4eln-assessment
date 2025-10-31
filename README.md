@@ -36,6 +36,8 @@ powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 
     ```bash
     git clone https://github.com/<YOUR_GITHUB_USERNAME>/llm4eln-assessment
+    # or use ssh if you have configured ssh keys
+    # git clone git@github.com:<YOUR_GITHUB_USERNAME>/llm4eln-assessment.git
     cd llm4eln-assessment
     ```
 
@@ -94,6 +96,12 @@ API_MODEL=gpt-5-nano-2025-08-07 # example
 # ollama
 API_PROVIDER=ollama
 API_MODEL=deepseek-r1:7b # example
+
+## Blablador
+#API_PROVIDER=blablador
+BBD_API_ENDPOINT=https://api.helmholtz-blablador.fz-juelich.de/v1/
+BBD_API_MODEL=alias-code
+BBD_API_KEY=<your-api-key>
 ```
 
 ## 4. Initialize a LLM Object
@@ -122,6 +130,14 @@ if environ.get("API_PROVIDER") == "ollama":
     from langchain_ollama import ChatOllama
     llm = ChatOllama(model=environ.get("API_MODEL"))
 
+if environ.get("API_PROVIDER") == "blablador":
+    # https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/blablador_api_access/
+    from langchain_openai import ChatOpenAI
+    llm = ChatOpenAI(
+        model=environ.get("BBD_API_MODEL"),
+        api_key=environ.get("BBD_API_KEY"),
+        base_url=environ.get("BBD_API_ENDPOINT")
+    )
 # ToDo: Gemini, Anthropic etc.
 ```
 
