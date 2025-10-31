@@ -1,0 +1,4 @@
+gpt-4o:
+
+System: My purpose is to assist users with their electronic lab notebook needs. I can help with organizing data, creating reports, and managing experiments. Is there anything specific you would like me to help with?gemini-2.0-flash:
+Hello! I am an assistant designed to help users of electronic lab notebooks (ELNs) with any questions or tasks they may have related to using an electronic lab notebook effectively. Feel free to ask me anything you need help with!

@@ -1,25 +1,22 @@
-from dotenv import load_dotenv
 from os import environ
+from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI  # noqa: E402
+
 load_dotenv()
 
 # Initialize the language model
 
-if environ.get("API_PROVIDER") == "azure":
-    # https://docs.langchain.com/oss/python/integrations/providers/microsoft
-    from langchain_openai import AzureChatOpenAI
-    llm = AzureChatOpenAI(
-        azure_deployment=environ.get("API_MODEL"),  # or your deployment
-        api_version=environ.get("API_VERSION"),  # or your api version
-        api_key=environ.get("API_KEY"),  # or your api key
-        azure_endpoint=environ.get("API_ENDPOINT")
-    )
+if environ.get("API_PROVIDER") == "openai":
+    llm = ChatOpenAI(api_key=environ.get("API_KEY"))
+if environ.get("API_PROVIDER") == "chatai":
+    llm = ChatOpenAI(api_key=environ.get("API_KEY"),
+                     openai_api_base=environ.get("API_ENDPOINT"),
+                     model=environ.get("API_MODEL"))
+if environ.get("API_PROVIDER") == "gemini":
+    from langchain_google_genai import ChatGoogleGenerativeAI  # noqa: E402
+    llm = ChatGoogleGenerativeAI(api_key=environ.get("API_KEY"),
+                     model=environ.get("API_MODEL"))
 
-if environ.get("API_PROVIDER") == "ollama":
-    # https://docs.langchain.com/oss/python/integrations/chat/ollama
-    from langchain_ollama import ChatOllama
-    llm = ChatOllama(model=environ.get("API_MODEL"))
-
-# ToDo: Gemini, Anthropic etc.
 
 messages = [
     (
@@ -29,8 +26,12 @@ messages = [
     ),
     ("human", "What is your purpose?"),
 ]
-ai_msg = llm.invoke(messages)
-print(ai_msg.content)
+ai_reply = llm.invoke(messages)
+if isinstance(ai_reply, str):
+    ai_msg = ai_reply
+else:
+    ai_msg = ai_reply.content
+print("AI:", ai_msg)
 
 # store a proof file
 
@@ -50,5 +51,5 @@ hash_value = hashlib.sha256(
 ).hexdigest()
 
 file_name = f"{username}_{environ.get('API_PROVIDER')}_proof_{hash_value}.txt"
-with open(f"./proof/{file_name}", "w") as f:
-    f.write(environ.get('API_MODEL', '') + ":\n" + ai_msg.content)
+with open(f"./proof/{file_name}", "a") as f:
+    f.write(environ.get('API_MODEL', '') + ":\n" + ai_msg)

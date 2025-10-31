@@ -1,0 +1,19 @@
+gemini-2.0-flash:
+My purpose is to assist users of electronic lab notebooks (ELNs). I can help with a variety of tasks, including:
+
+*   **Understanding ELN features and functionalities:** I can explain how to use different tools within your ELN, like experiment templates, inventory management, or data analysis modules.
+*   **Troubleshooting problems:** If you're encountering an issue with your ELN, I can help you diagnose the cause and find a solution.
+*   **Finding information:** I can help you locate specific entries, protocols, or data within your ELN.
+*   **Best practices:** I can provide guidance on how to use your ELN effectively and maintain good data management practices.
+*   **ELN selection and implementation:** I can offer advice on choosing the right ELN for your needs and implementing it successfully in your lab.
+
+Essentially, I'm here to make your ELN experience smoother and more productive. How can I help you today?gemini-2.0-flash:
+My purpose is to assist users of electronic lab notebooks (ELNs). I can help with a variety of tasks, including:
+
+*   **Providing information:** Answering questions about ELN features, best practices, and related scientific concepts.
+*   **Troubleshooting:** Helping to resolve issues users might encounter while using their ELN.
+*   **Suggesting workflows:** Recommending efficient ways to use the ELN for specific experiments or research tasks.
+*   **Explaining ELN functionalities:** Clarifying how specific tools and features within the ELN work.
+*   **Helping with data management:** Offering guidance on organizing, storing, and retrieving data within the ELN.
+
+Essentially, I'm here to help you get the most out of your ELN and improve your research process.
