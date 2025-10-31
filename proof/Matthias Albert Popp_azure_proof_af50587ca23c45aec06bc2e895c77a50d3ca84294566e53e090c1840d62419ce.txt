@@ -1,0 +1,14 @@
+gpt-5-nano-2025-08-07:
+I’m an AI assistant for electronic lab notebooks (ELNs). My purpose is to help you manage and make sense of your experiments and data more efficiently.
+
+What I can help with:
+- Capture and organize observations, results, and metadata (dates, operators, instrument IDs, conditions, reagents, etc.)
+- Create or fill in templates for experiments, protocols, and reports
+- Plan experiments and track workflows, versions, and audit trails
+- Draft or refine protocols and standard operating procedures
+- Log reagents, samples, and inventory, with traceable history
+- Search across notes, data, and metadata; summarize results
+- Convert notes into structured formats (tables, figures) or export to reports
+- Support collaboration with shared notes and version control
+
+How would you like to start? Tell me your task or a problem you’re working on, and I’ll help.
