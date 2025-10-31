@@ -17,10 +17,14 @@ powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 ### 2. Create Project and Virtual Environment
 
+First create your own fork: https://github.com/LLM4ELN/self-assessment/fork
+
+Then clone your fork and set up the project:
+
 ```bash
 ### Create new project
 
-git clone https://github.com/LLM4ELN/self-assessment
+git clone https://github.com/<your_username>/self-assessment
 cd self-assessment
 
 ### Initialize Python project with uv
@@ -122,10 +126,13 @@ with open(f"./proof/{file_name}", "w") as f:
 
 ### 7. Push your proof
 
-Create a branch '<user_name>-proof'
 ```
-git checkout -b <user_name>-proof
 git add proof/<your_proof_file>.txt
 git commit -m "Add proof file for <user_name>"
-git push origin <user_name>-proof
+git push origin main
+```
+
+Create a pull request by visiting 
+```
+https://github.com/LLM4ELN/self-assessment/compare/main...<your_username>:self-assessment:main
 ```
