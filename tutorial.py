@@ -19,6 +19,14 @@ if environ.get("API_PROVIDER") == "ollama":
     from langchain_ollama import ChatOllama
     llm = ChatOllama(model=environ.get("API_MODEL"))
 
+if environ.get("API_PROVIDER") == "blablador":
+    # https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/blablador_api_access/
+    from langchain_openai import ChatOpenAI
+    llm = ChatOpenAI(
+        model=environ.get("API_MODEL"),
+        api_key=environ.get("API_KEY"),
+        base_url=environ.get("API_ENDPOINT")
+    )
 # ToDo: Gemini, Anthropic etc.
 
 messages = [
