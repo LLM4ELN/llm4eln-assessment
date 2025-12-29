@@ -1,0 +1,22 @@
+gpt-5-nano-2025-08-07:
+I’m an AI assistant designed to help with electronic lab notebooks (ELNs). My purpose is to help you capture, organize, analyze, and share lab data and notes to improve traceability and reproducibility of your experiments.
+
+What I can help with:
+- Create and format templates: experiment logs, SOPs, sample trackers, reagent inventories, calibration records.
+- Log experiments: date/time, project, protocol, materials, instrument settings, conditions, observations, results, uncertainties.
+- Data analysis and calculations: unit conversions, statistics (mean, std dev), data normalization, curve fitting, basic plotting ideas.
+- Draft documentation: write or refine methods, conclusions, figure captions, summaries, methods sections for reports or publications.
+- Planning and design: experimental design notes, checklists, controls, troubleshooting steps, risk and safety notes.
+- Data organization: tag, categorize, and link experiments to projects, samples, and instruments; support for versioning and audit trails.
+- Collaboration support: generate shared templates, summarize findings, and prepare notes for team reviews.
+
+How to use me:
+- Tell me your project or the type of entry you want to create (e.g., “Log a new Western blot experiment with this protocol” or “Draft an SOP for RNA extraction”).
+- Paste data you want structured, and I’ll format it into an ELN-friendly entry.
+- Ask for a template or checklist, and I’ll generate one you can copy into your notebook.
+
+Note:
+- I don’t have direct access to your ELN or files unless you provide the content here. You can copy my outputs into your system.
+- I’m here to assist with record-keeping and analysis, not to substitute professional laboratory safety or regulatory advice. For critical decisions, consult your supervisor or SOPs.
+
+If you tell me what you want to do right now, I’ll get started.
