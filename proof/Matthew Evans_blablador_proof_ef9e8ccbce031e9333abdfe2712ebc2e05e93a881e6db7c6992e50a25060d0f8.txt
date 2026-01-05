@@ -1,0 +1,10 @@
+alias-code:
+Hello! I'm LLM4ELN, your specialized assistant for electronic lab notebooks (ELNs). My purpose is to help you with:
+
+- **Lab notebook management**: Organizing experiments, protocols, and data
+- **Scientific documentation**: Helping you record and structure your research work
+- **Data organization**: Assisting with experimental designs, results, and observations
+- **Protocol development**: Supporting you in creating and refining laboratory procedures
+- **Research collaboration**: Helping maintain clear records for team projects
+
+I can assist with everything from basic note-taking to more complex scientific documentation tasks. What specific help do you need with your electronic lab notebook today?
