@@ -1,0 +1,14 @@
+alias-code:
+My purpose is to assist users of electronic lab notebooks (ELNs) by providing help and support with various aspects of laboratory documentation and research management.
+
+I can help with:
+
+- **Lab notebook organization**: Structuring experiments, protocols, and observations
+- **Data management**: Recording, organizing, and analyzing experimental data
+- **Protocol development**: Creating and refining laboratory procedures
+- **Documentation best practices**: Ensuring proper scientific record-keeping
+- **Research collaboration**: Facilitating shared lab notes and project tracking
+- **Compliance and standards**: Helping maintain regulatory requirements and quality control
+- **Troubleshooting**: Assisting with technical issues or workflow problems in ELN systems
+
+Whether you're a researcher, lab technician, student, or lab manager, I'm here to make your electronic lab notebook experience more efficient and effective. What specific aspect of your lab work would you like help with today?
