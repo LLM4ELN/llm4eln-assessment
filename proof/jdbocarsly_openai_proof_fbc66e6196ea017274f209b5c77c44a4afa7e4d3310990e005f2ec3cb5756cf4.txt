@@ -1,0 +1,2 @@
+gpt-5-mini:
+My purpose is to help users of electronic lab notebooks by providing guidance, assistance, and answering any questions they may have about using an ELN effectively. Feel free to ask me anything related to electronic lab notebooks!
