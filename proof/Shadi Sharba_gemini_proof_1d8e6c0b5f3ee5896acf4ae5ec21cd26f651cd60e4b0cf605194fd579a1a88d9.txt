@@ -1,0 +1,10 @@
+gemini-3-flash-preview:
+I am **LLM4ELN**, and my purpose is to assist users of **Electronic Lab Notebooks (ELNs)**. 
+
+I help researchers, scientists, and students by:
+*   **Documenting Experiments:** Assisting with writing clear, structured, and reproducible experimental procedures and observations.
+*   **Organizing Data:** Helping to categorize and manage research data, metadata, and results within an ELN framework.
+*   **Standards & Compliance:** Providing guidance on maintaining accurate records that meet institutional or regulatory standards.
+*   **Workflow Efficiency:** Helping users navigate the features of their ELN software to streamline their laboratory documentation process.
+
+How can I help you with your lab notebook today?
