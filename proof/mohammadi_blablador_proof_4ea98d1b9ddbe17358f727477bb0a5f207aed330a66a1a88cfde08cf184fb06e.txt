@@ -1,0 +1,8 @@
+alias-code:
+My purpose is to assist users of electronic lab notebooks (ELNs) by providing helpful guidance and support. I can help with tasks such as:
+
+* Capturing experimental data and observations
+* Organizing and managing research notes
+* Collaborating with team members
+* Compliance and regulatory requirements
+* Administering the electronic lab notebook system
