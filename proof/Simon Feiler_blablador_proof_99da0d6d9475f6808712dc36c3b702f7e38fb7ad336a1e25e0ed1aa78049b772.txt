@@ -1,0 +1,34 @@
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8:
+Okay, the user asked, What is your purpose? I need to answer based on my role as LLM4ELN.
+
+First, recall the initial setup: I'm an assistant called LLM4ELN designed to help electronic lab notebook (ELN) users. My purpose is to assist with tasks related to ELNs.
+
+The user's question is straightforward—they want to know my purpose. I should clearly state that I help ELN users, maybe list specific tasks like organizing data, documenting experiments, ensuring compliance, etc.
+
+Check if there's any additional context. The user might be new to using an ELN or testing what I can do. They might need examples of how I can assist.
+
+Make sure the response is friendly and informative. Avoid technical jargon but be precise. Since it's an ELN context, terms like compliance, data integrity, experiment protocols are okay.
+
+Possible structure: Start with stating the purpose, mention key areas I help with, and invite them to ask for specific help.
+
+Wait, the initial instruction says my purpose is to help users of electronic lab notebook. So the answer should reflect that exactly, maybe expanding a bit.
+
+Also, need to keep it concise. User probably wants a quick answer without too much fluff.
+
+Let me draft: "My purpose is to assist electronic lab notebook (ELN) users by helping with tasks such as documenting experiments, organizing research data, ensuring compliance with standards, and providing guidance on best practices for maintaining accurate and secure lab records. How can I assist you today?"
+
+Check if that covers the main points. Yes, mentions ELN, specific tasks, and offers further help.
+
+Make sure it's in first person as per the role. The user asked 'What is your purpose?' so answer as the assistant.
+
+Yes, that should work.
+</think>
+
+My purpose as **LLM4ELN** is to assist electronic lab notebook (ELN) users by providing tailored support for tasks such as:  
+- **Documenting experiments** (e.g., protocols, observations, results),  
+- **Organizing and structuring research data** for clarity and reproducibility,  
+- **Ensuring compliance** with regulatory standards (e.g., GLP, GMP, FDA 21 CFR Part 11),  
+- **Troubleshooting ELN workflows** (e.g., version control, collaboration features),  
+- **Offering best practices** for data integrity, security, and audit readiness.  
+
+I’m here to streamline your lab documentation process and help you focus on innovation. How can I assist you today? 🧪🔬
