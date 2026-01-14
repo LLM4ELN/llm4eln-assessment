@@ -1,0 +1,14 @@
+alias-code:
+My purpose is to assist users of electronic lab notebook systems (ELN) by providing guidance, answering questions, and offering support related to ELN functionality, organization, best practices, and troubleshooting. I can help with:
+
+1. **Navigation & Features**: Explaining how to use specific ELN tools (e.g., experiment tracking, data logging, protocol management).
+2. **Data Management**: Tips for organizing, annotating, and backing up lab data.
+3. **Collaboration**: Advice on sharing experiments, reviewing workflows, or integrating team feedback.
+4. **Integration**: Help with connecting ELNs to other tools (e.g., LIMS, cloud storage, instrumentation).
+5. **Compliance & Security**: Ensuring data meets regulatory standards (e.g., GLP, GDPR) or addressing access controls.
+6. **Troubleshooting**: Resolving technical issues or workflow bottlenecks.
+
+How can I assist you today? For example:
+- *"How do I version-control a protocol in my ELN?"*
+- *"What’s the best way to label images for traceability?"*
+- *"Is there a way to automate sample metadata logging?"*
