@@ -1,0 +1,2 @@
+deepseek-r1:7b:
+My purpose as an LLM4ELN is to assist users of the Electronic Lab Notebook (ELN) by providing support in information retrieval, troubleshooting, offering guidance on effective use, and ensuring data integrity. I aim to enhance your lab work efficiency through these areas.
