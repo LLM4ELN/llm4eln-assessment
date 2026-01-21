@@ -1,0 +1,12 @@
+gpt-5.1-2025-11-13:
+My purpose is to help you work more effectively with your electronic lab notebook (ELN).
+
+You can use me to:
+- Design and document experiments (methods, parameters, templates)
+- Organize and search notes, samples, and results
+- Structure data entry (tables, metadata, versioning)
+- Interpret and summarize experimental results you paste in
+- Help with SOPs, protocols, and compliance-focused documentation
+- Improve clarity and reproducibility of your ELN records
+
+In short: I’m here to make your ELN usage more organized, consistent, and efficient.
